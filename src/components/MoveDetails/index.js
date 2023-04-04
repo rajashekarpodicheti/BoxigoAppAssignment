@@ -15,7 +15,7 @@ import InventoryItem from '../InventoryItem'
 
 import './index.css'
 
-const AddressItem = props => {
+const MoveDetails = props => {
   const {moveData} = props
 
   const [viewDetails, setViewDetails] = useState(false)
@@ -166,4 +166,4 @@ const AddressItem = props => {
   )
 }
 
-export default AddressItem
+export default MoveDetails

@@ -3,7 +3,7 @@ import {ThreeDots} from 'react-loader-spinner'
 import data from '../../data/data.json'
 import './index.css'
 
-import AddressItem from '../AddressItem'
+import MoveDetails from '../MoveDetails'
 
 const apiConstatnt = {
   initial: 'INITIAL',
@@ -44,7 +44,7 @@ const MyMoves = () => {
   const successView = () => (
     <div className="my-moves-success-card">
       {estimateData.map(address => (
-        <AddressItem key={address.estimate_id} moveData={address} />
+        <MoveDetails key={address.estimate_id} moveData={address} />
       ))}
     </div>
   )
